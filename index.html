@@ -88,7 +88,8 @@
   ul.clean.tight li{margin-bottom:9px}
 
   /* Concept cards */
-  .concept{background:var(--surface); border:1px solid rgba(244,239,232,.09); border-radius:var(--radius); padding:28px 28px 16px; margin:42px 0}
+  .concept{position:relative; background:var(--surface); border:1px solid rgba(244,239,232,.09); border-radius:var(--radius); padding:30px 30px 18px 84px; margin:60px 0}
+  .cnum{position:absolute; left:0; top:30px; width:84px; text-align:center; font-family:var(--serif); font-weight:500; font-size:34px; line-height:1; color:var(--signal)}
   .concept-head{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:6px}
   .role{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--mute); border:1px solid rgba(138,144,153,.4); padding:3px 8px; border-radius:100px; white-space:nowrap}
   dl{margin:20px 0 14px}
@@ -136,7 +137,8 @@
     .wrap{padding:40px 20px 72px}
     .parts,.bundles{grid-template-columns:1fr}
     .bundle.reco{margin-top:8px}
-    .concept{padding:20px 18px 6px}
+    .concept{padding:24px 18px 8px 62px; margin:44px 0}
+    .cnum{width:62px; top:24px; font-size:28px}
     .block.callout{padding:26px 20px}
   }
 </style>
@@ -166,6 +168,7 @@
   <p class="lead">All three are about naming and domains, so they fit what the community is for. All three avoid making anyone expose their own brand. All three end with one of your extensions as the natural answer.</p>
 
   <article class="concept">
+    <div class="cnum">1</div>
     <div class="concept-head">
       <h3>The .com Nightmare</h3>
       <span class="role">The launch</span>
@@ -183,6 +186,7 @@
   </article>
 
   <article class="concept">
+    <div class="cnum">2</div>
     <div class="concept-head">
       <h3>Rename This Business</h3>
       <span class="role">The engine</span>
@@ -200,6 +204,7 @@
   </article>
 
   <article class="concept">
+    <div class="cnum">3</div>
     <div class="concept-head">
       <h3>Namify Naming Contests, always on</h3>
       <span class="role">Phase two</span>
